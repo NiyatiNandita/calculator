@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- <meta charset="UTF-8" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Calculator app</title>
+    <link rel="stylesheet" href="/style.css" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section>
+      <div class="start">
+        <h3>calc</h3>
+        <div>
+          <p>THEME</p>
+          <div class="ttt">
+            <button class="theme" onclick="togg()"></button>
+          </div>
+        </div>
+      </div>
+      <div class="display"><p id="display-val"></p></div>
+      <div class="calculator">
+        <div class="buttons num">7</div>
+        <div class="buttons num">8</div>
+        <div class="buttons num">9</div>
+        <div class="buttons del-re" onclick="del()">DEL</div>
+        <div class="buttons num">4</div>
+        <div class="buttons num">5</div>
+        <div class="buttons num">6</div>
+        <div class="buttons num">+</div>
+        <div class="buttons num">1</div>
+        <div class="buttons num">2</div>
+        <div class="buttons num">3</div>
+        <div class="buttons num">-</div>
+        <div class="buttons num">.</div>
+        <div class="buttons num">0</div>
+        <div class="buttons num">/</div>
+        <div class="buttons num">*</div>
+        <div class="buttons del-re btn" id="reset-btn" onclick="reset()">
+          RESET
+        </div>
+        <div class="buttons eq btn" id="equal-btn" onclick="equal()">=</div>
+      </div>
+    </section>
+
+    <script src="/index.js" type="text/javascript"></script>
+  </body>
+</html>
